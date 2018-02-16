@@ -36,13 +36,10 @@ ssh -i ~/.ssh/AWSLightsailPrivateKey.pem ubuntu@54.186.68.156
 4. Save and Quit
 
 ### Step 6: Configure Uncomplicated Firewall
-```
-sudo ufw allow 2200/tcp
-sudo ufw allow 80/tcp
-sudo ufw allow 123/udp
-sudo ufw enable
-```
+Configure the firewall to only allow incoming connections from SSH, HTTP, and NTP
+
 ### Step 7: Configure Time Zone
 `sudo dpkg-reconfigure tzdata`
 
-### Step 8: 
+### Step 8: Install and Configure Apache to serve a Python mod_wsgi App
+1. 
