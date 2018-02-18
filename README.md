@@ -42,4 +42,16 @@ Configure the firewall to only allow incoming connections from SSH, HTTP, and NT
 `sudo dpkg-reconfigure tzdata`
 
 ### Step 8: Install and Configure Apache to serve a Python mod_wsgi App
-1. 
+1. Install the Apache Server Package using `sudo apt-get install apache2`
+2. Check your browser to see if the Ubuntu and Apache2 Basic page shows up at the Public IP Address
+3. Install #####mod_wsgi for serving python applications with Apache, and install the python helper packages
+`sudo apt-get install python-setuptools libapache2-mod-wsgi`
+4. Restart the Apache server
+### Step 9: Install Git
+1. Install git using `sudo apt-get install git`
+2. Set-up git using 
+```
+git config --global user.name "apple162"
+git config --global user.email "apple162@yahoo.com"
+```
+### Step 10: 
